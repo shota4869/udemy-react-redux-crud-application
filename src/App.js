@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 
 /**
  * 関数コンポーネントの例
@@ -26,11 +28,9 @@ const User = (props) => {
   return <div>Hi!I am {props.name},and {props.age} yaears old</div>
 }
 
-/**
- * defaultPropsを使うことでprofilesにageが定義されていないときは以下を参照するようになる
- */
-User.defaultProps = {
-  age :1
+User.propTypes = { 
+  name: PropTypes.string,
+  age: PropTypes.number.isRequired
 }
 
 export default App;
