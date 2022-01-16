@@ -1,29 +1,40 @@
-import React,{ Component } from "react";
+import React from "react";
 
+/**
+ * クラスコンポーネントの例
+ * 
+ * @returns 
+ * 
+ */
 // class App extends Component {
 //   render(){
-//     const greeting = "Hi,Shota";
-//     const dom = <h1 className ="foo">{greeting}</h1>;
-//     HTMLのClassはclassNameとする
-//     return dom;
+//     return(
+//       <React.Fragment>
+//         <label htmlFor="bar">bar</label>
+//         <input type="text" onChange={() => {console.log("I am clicked")}}/>;
+//       </React.Fragment>
+//     ) 
 //   }
 // }
 
-// class App extends Component {
-//   render(){
-//     return <input type="text" onChange={() => {console.log("I am clicked")}}/>;
-//   }
-// }
+/**
+ * 関数コンポーネントの例
+ * 
+ * @returns 
+ */
+const App = () => {
+  return (
+  <div>
+    <Cat />
+    <Cat />
+    <Cat />
+    <Cat />
+  </div>
+  )
+}
 
-class App extends Component {
-  render(){
-    return(
-      <React.Fragment>
-        <label htmlFor="bar">bar</label>
-        <input type="text" onChange={() => {console.log("I am clicked")}}/>;
-      </React.Fragment>
-    ) 
-  }
+const Cat = () => {
+  return <div>Meow!</div>
 }
 
 export default App;
