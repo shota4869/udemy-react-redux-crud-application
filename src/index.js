@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux'　//storeの内容をアプリケーションの全コンポーネントに渡す機能
 
 import './index.css';
 import reducer from './reducers'
